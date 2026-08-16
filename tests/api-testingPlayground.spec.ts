@@ -11,6 +11,7 @@ test('Obtener Usuarios', async ({ request }) => {
     const body = await response.json();             // en la variable body tomo el contenido/body de esa respuesta y conviértelo/interprétalo como JSON.”
 
     expect(body.data).toBeDefined();
+    expect(body.data).not.toHaveLength(0);
 
     console.log(body.data);
 });
