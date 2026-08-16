@@ -30,7 +30,11 @@ test('Asertions user 3', async ({ request }) => {
 
     expect(body.data[2].firstName).toBe('Diego');
 
+    expect(body.data[2].lastName).toBe('Haddad');
+
     expect(body.data[2].role).toBe('analyst');
+
+    console.log(body)
 });
 
 test('Buscar usuario', async ({ request }) => {
