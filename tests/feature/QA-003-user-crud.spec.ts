@@ -76,8 +76,8 @@ test('QA-002', async ({ request }) => {
 
     const body = await response.json();
 
-    expect(bodyU.data.firstName).toBe('Alejandro');
-    expect(bodyU.role).toBe('QA Analyst');
+    expect(body.data.firstName).toBe('Alejandro');
+    expect(body.role).toBe('QA Analyst');
 
 
     //D
